@@ -1,0 +1,40 @@
+.catalog {
+    position: relative;
+    min-height: 100vh; //минимум 100% от высоты экрана
+
+    &-header {
+        text-align: center;
+        padding: 30px 0;
+    }
+
+    &-list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-item {
+        width: 20%;
+        text-align: center;
+        text-decoration: none;
+        color: #000;
+        cursor: pointer;
+        transition: 0.5s ease;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+
+        &__img {
+            height: 255px;
+            border: 1px solid #c8c8c8;
+            background-size: 80% auto; //вместо паддингов, auto по умолчанию будет и так (паддинги не срабоатют на background)
+            background-repeat: no-repeat;
+            background-position: center;   
+        }
+
+        &__name { 
+            margin: 20px 0 10px;
+            font-weight: bold;
+        }
+    }
+}
