@@ -7,7 +7,7 @@
     include('parts/header.php');
 ?>
 
-<div>Главная страница</div>
+<div>Моя главная страница</div>
 
 <?php
     $footer_config = [
