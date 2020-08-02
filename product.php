@@ -24,7 +24,15 @@
     } else {
         header('Location: /catalog.php'); //редирект - если случайно зайти сразу на эту страницу, то перебросит на главную или каталог
     }  //в Location передаем url страницы куда надо перебросить
+
+    $breadcrumbs = 'мужчинам';
 ?>
+
+<div class="breadcrumbs">
+    <a href="/">главная</a> / 
+    
+    <a href="/catalog.php"><?= $breadcrumbs ?></a>
+</div>
 
 <div class="product">
     <div class="product-img" style="background-image: url(<?= $template['img_url'] ?>)"></div>
@@ -41,7 +49,7 @@
         <?= $template['description'] ?>
     </div>
 
-    <div class="product-btn">
+    <div class="product-btn" data-product-id="<?= $template['id'] ?>"> <!-- product-id хранится в $template-->
         Добавить в корзину
     </div>
 </div>

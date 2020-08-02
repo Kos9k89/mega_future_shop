@@ -1,1 +1,485 @@
-/* No CSS *//*# sourceMappingURL=index.css.map */
+.offer {
+  padding: 140px 0 50px;
+  text-align: center;
+  color: #303030;
+}
+
+.offer__title {
+  font-size: 60px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.offer__subtitle {
+  margin: 5px 0 60px;
+  font-size: 24px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+  color: #606060;
+}
+
+.offer__btn {
+  padding: 20px 30px;
+  border: 1px solid #303030;
+  text-transform: uppercase;
+  color: #303030;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.offer__btn:hover {
+  background: #f68236;
+  border: 1px solid #f68236;
+  color: #fff;
+}
+
+.products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+}
+
+.products__inner {
+  width: 50%;
+}
+
+.products__jeans {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.products__jeans-jacket {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 50%;
+  height: 600px;
+  padding: 0 30px;
+  background: url(/images/1.jpg) no-repeat center;
+  background-size: cover;
+  line-height: 30px;
+  font-size: 27px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.products__jeans-jacket span {
+  margin-top: 5px;
+  font-size: 22px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+}
+
+.products__jeans-inner {
+  width: 50%;
+}
+
+.products__jeans-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 300px;
+  padding: 0 30px;
+  background-color: #bbbbbb;
+  font-size: 16px;
+  font-style: italic;
+  text-align: center;
+}
+
+.products__jeans-attention {
+  position: relative;
+  height: 40px;
+  width: 40px;
+  margin-bottom: 15px;
+  background: url(/images/icons/attention-sign-outline.png) no-repeat center;
+  background-size: contain;
+}
+
+.products__jeans-attention:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -40px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 30px;
+  height: 2px;
+  background: url(/images/icons/Shape.png) no-repeat center;
+  background-size: cover;
+}
+
+.products__jeans-attention:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -40px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 30px;
+  height: 2px;
+  background: url(/images/icons/Shape.png) no-repeat center;
+  background-size: cover;
+}
+
+.products__jeans-pants {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 300px;
+  padding: 0 30px;
+  background: url(/images/2.jpg) no-repeat center;
+  background-size: cover;
+  font-size: 27px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.products__jeans-pants span {
+  margin-top: 5px;
+  font-size: 22px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-transform: none;
+  font-style: italic;
+}
+
+.products__accessories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 300px;
+}
+
+.products__accessories-img {
+  width: 50%;
+  background: url(/images/5.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.products__accessories-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 50%;
+  padding: 0 30px;
+  background-color: #606060;
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.products__accessories-arrow {
+  width: 40px;
+  height: 20px;
+  margin-bottom: 15px;
+  background: url(/images/icons/arrow.png) no-repeat center;
+  background-size: contain;
+}
+
+.products__shoes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 300px;
+}
+
+.products__shoes-img {
+  width: 50%;
+  background: url(/images/3.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.products__shoes-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 50%;
+  padding: 0 30px;
+  background-color: #606060;
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.products__shoes-name span {
+  margin-top: 5px;
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+}
+
+.products__shoes-arrow {
+  width: 40px;
+  height: 20px;
+  margin-bottom: 15px;
+  background: url(/images/icons/arrow.png) no-repeat center;
+  background-size: contain;
+}
+
+.products__clothes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.products__clothes-children {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 50%;
+  height: 600px;
+  padding: 0 30px;
+  background: url(/images/31735710342_86e5b0c63f_b.jpg) no-repeat 4%;
+  background-size: cover;
+  line-height: 30px;
+  font-size: 27px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.products__clothes-children span {
+  margin-top: 5px;
+  font-size: 22px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+}
+
+.products__clothes-inner {
+  width: 50%;
+}
+
+.products__clothes-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 300px;
+  padding: 0 30px;
+  background-color: #bbbbbb;
+  font-size: 16px;
+  font-style: italic;
+  text-align: center;
+}
+
+.products__clothes-attention {
+  position: relative;
+  height: 40px;
+  width: 40px;
+  margin-bottom: 15px;
+  background: url(/images/icons/attention-sign-outline.png) no-repeat center;
+  background-size: contain;
+}
+
+.products__clothes-attention:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -40px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 30px;
+  height: 2px;
+  background: url(/images/icons/Shape.png) no-repeat center;
+  background-size: cover;
+}
+
+.products__clothes-attention:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -40px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 30px;
+  height: 2px;
+  background: url(/images/icons/Shape.png) no-repeat center;
+  background-size: cover;
+}
+
+.products__clothes-sport {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 300px;
+  padding: 0 30px;
+  background: url(/images/7.jpg) no-repeat center;
+  background-size: cover;
+  background-blend-mode: overlay;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 27px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.products__clothes-sport span {
+  margin-top: 5px;
+  font-size: 22px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-transform: none;
+  font-style: italic;
+}
+
+.subscription {
+  padding-top: 200px;
+  text-align: center;
+  color: #303030;
+}
+
+.subscription__title {
+  font-size: 36px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.subscription__subtitle {
+  margin: 5px 0 50px;
+  font-size: 18px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+  color: #606060;
+}
+
+.subscription__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.subscription__form input[type='email'] {
+  width: 75%;
+  height: 50px;
+  padding-left: 15px;
+  border: 1px solid #606060;
+  border-right-width: 0px;
+  outline: none;
+}
+
+.subscription__form input[type='submit'] {
+  width: 25%;
+  height: 50px;
+  border: 1px solid #f68236;
+  outline: none;
+  background-color: #f68236;
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.subscription__form input[type='submit']:hover {
+  background-color: #f77a26;
+}
+
+.subscription__error {
+  margin-top: 20px;
+  text-align: center;
+  color: red;
+}
+
+.subscription__success {
+  margin-top: 20px;
+  text-align: center;
+  color: #606060;
+}
+/*# sourceMappingURL=index.css.map */

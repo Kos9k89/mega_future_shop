@@ -1,0 +1,385 @@
+.offer {
+    padding: 140px 0 50px;
+    text-align: center;
+    color: #303030;
+
+    &__title {
+        font-size: 60px;
+        font-weight: normal;
+        text-transform: uppercase;
+    }
+
+    &__subtitle {
+        margin: 5px 0 60px;
+        font-size: 24px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-style: italic;
+        color: #606060;
+    }
+
+    &__btn {
+        padding: 20px 30px;
+        border: 1px solid #303030;
+        text-transform: uppercase;
+        color: #303030;
+        transition: .4s;
+
+        &:hover {
+            background: #f68236;
+            border: 1px solid #f68236;
+            color: #fff;
+        }
+    }
+}
+
+.products {
+    display: flex;
+    color: #fff;
+
+    &__inner {
+        width: 50%;
+
+    }
+
+    &__jeans {
+        display: flex;
+
+        &-jacket {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 50%;
+            height: 600px;
+            padding: 0 30px;
+            background: url(/images/1.jpg) no-repeat center;
+            background-size: cover;
+            line-height: 30px;
+            font-size: 27px;
+            text-align: center;
+            text-transform: uppercase;
+
+            & span {
+                margin-top: 5px;
+                font-size: 22px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-style: italic;
+            }
+        }
+
+        &-inner {
+            width: 50%;
+        }
+
+        &-info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+            height: 300px;
+            padding: 0 30px;
+            background-color: #bbbbbb;
+            font-size: 16px;
+            font-style: italic;
+            text-align: center;
+        }
+
+        &-attention {
+            position: relative;
+            height: 40px;
+            width: 40px;
+            margin-bottom: 15px;
+            background: url(/images/icons/attention-sign-outline.png) no-repeat center;
+            background-size: contain;
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: -40px;
+                transform: translateY(-50%);
+                width: 30px;
+                height: 2px;
+                background: url(/images/icons/Shape.png) no-repeat center;
+                background-size: cover;
+            }
+
+            &:after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                right: -40px;
+                transform: translateY(-50%);
+                width: 30px;
+                height: 2px;
+                background: url(/images/icons/Shape.png) no-repeat center;
+                background-size: cover;
+            }
+        }
+
+        &-pants {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+            height: 300px;
+            padding: 0 30px;
+            background: url(/images/2.jpg) no-repeat center;
+            background-size: cover;
+            font-size: 27px;
+            text-align: center;
+            text-transform: uppercase;
+
+            & span {
+                margin-top: 5px;
+                font-size: 22px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                text-transform: none;
+                font-style: italic;
+            }
+        }
+    }
+
+    &__accessories {
+        display: flex;
+        height: 300px;
+
+        &-img {
+            width: 50%;
+            background: url(/images/5.jpg) no-repeat center;
+            background-size: cover;
+        }
+
+        &-name {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 50%;
+            padding: 0 30px;
+            background-color: #606060;
+            font-size: 24px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        &-arrow {
+            width: 40px;
+            height: 20px;
+            margin-bottom: 15px;
+            background: url(/images/icons/arrow.png) no-repeat center;
+            background-size: contain;
+        }
+    }
+
+    &__shoes{
+        display: flex;
+        height: 300px;
+
+        &-img {
+            width: 50%;
+            background: url(/images/3.jpg) no-repeat center;
+            background-size: cover;
+        }
+
+        &-name {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 50%;
+            padding: 0 30px;
+            background-color: #606060;
+            font-size: 24px;
+            text-align: center;
+            text-transform: uppercase;
+
+            & span {
+                margin-top: 5px;
+                font-size: 20px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-style: italic;
+            }
+        }
+
+        &-arrow {
+            width: 40px;
+            height: 20px;
+            margin-bottom: 15px;
+            background: url(/images/icons/arrow.png) no-repeat center;
+            background-size: contain;
+        }
+    }
+
+    &__clothes {
+        display: flex;
+
+        &-children {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 50%;
+            height: 600px;
+            padding: 0 30px;
+            background: url(/images/31735710342_86e5b0c63f_b.jpg) no-repeat 4%;
+            background-size: cover;
+            line-height: 30px;
+            font-size: 27px;
+            text-align: center;
+            text-transform: uppercase;
+
+            & span {
+                margin-top: 5px;
+                font-size: 22px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-style: italic;
+            }
+        }
+
+        &-inner {
+            width: 50%;
+        }
+
+        &-info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+            height: 300px;
+            padding: 0 30px;
+            background-color: #bbbbbb;
+            font-size: 16px;
+            font-style: italic;
+            text-align: center;
+        }
+
+        &-attention {
+            position: relative;
+            height: 40px;
+            width: 40px;
+            margin-bottom: 15px;
+            background: url(/images/icons/attention-sign-outline.png) no-repeat center;
+            background-size: contain;
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: -40px;
+                transform: translateY(-50%);
+                width: 30px;
+                height: 2px;
+                background: url(/images/icons/Shape.png) no-repeat center;
+                background-size: cover;
+            }
+
+            &:after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                right: -40px;
+                transform: translateY(-50%);
+                width: 30px;
+                height: 2px;
+                background: url(/images/icons/Shape.png) no-repeat center;
+                background-size: cover;
+            }
+        }
+
+        &-sport {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+            height: 300px;
+            padding: 0 30px;
+            background: url(/images/7.jpg) no-repeat center;
+            background-size: cover;
+            background-blend-mode: overlay;
+            background-color: rgba(0, 0 , 0, .5);
+            font-size: 27px;
+            text-align: center;
+            text-transform: uppercase;
+
+            & span {
+                margin-top: 5px;
+                font-size: 22px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                text-transform: none;
+                font-style: italic;
+            }
+        }
+    }
+}
+
+.subscription {
+    padding-top: 200px;
+    text-align: center;
+    color: #303030;
+
+    &__title {
+        font-size: 36px;
+        font-weight: normal;
+        text-transform: uppercase;
+    }
+
+    &__subtitle {
+        margin: 5px 0 50px;
+        font-size: 18px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-style: italic;
+        color: #606060;
+    }
+
+    &__form {
+        display: flex;
+        justify-content: center;
+        max-width: 600px;
+        margin: 0 auto;
+
+        input[type='email'] {    
+            width: 75%;
+            height: 50px;
+            padding-left: 15px;
+            border: 1px solid #606060;
+            border-right-width: 0px;
+            outline: none;
+        }
+
+        input[type='submit'] {
+            width: 25%;
+            height: 50px;
+            border: 1px solid #f68236;
+            outline: none;
+            background-color: #f68236;
+            color: #fff;
+            cursor: pointer;
+            transition: .4s;
+
+            &:hover {
+                background-color: #f77a26;
+            }
+        }
+    }
+
+    &__error {
+        margin-top: 20px;
+        text-align: center;
+        color: red;
+    }
+
+    &__success {
+        margin-top: 20px;
+        text-align: center;
+        color: #606060;
+    } 
+}

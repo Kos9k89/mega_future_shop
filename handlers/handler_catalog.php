@@ -5,7 +5,9 @@
         'products' => []
     ];
 
-    $sql_products = "SELECT * FROM products";
+    $sql_products = "SELECT products.* FROM products INNER JOIN product_category /*объединяет 2 таблицы в БД по нужному id */
+    ON products.id = product_category.product_id  /*products.* забирате только поля которые находятся в products*/ 
+    WHERE product_category.category_id = {$_GET['category_id']}";
 
     $result_products = mysqli_query($link, $sql_products);
 
@@ -13,6 +15,6 @@
         $response['products'][] = $row;
     }
 
-   sleep(3); //задержка на три секунды, потом все появляется
+//    sleep(3); //задержка на три секунды, потом все появляется
    echo json_encode($response['products']);
 ?>

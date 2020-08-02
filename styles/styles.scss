@@ -5,15 +5,29 @@
     box-sizing: border-box;
 }
 
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
 body {
-    background-color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
+    padding: 60px;
+    background-color: #e5e5e5;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .wrapper {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 30px;
+    background-color: #fff;
 }
+
+
 
 //Лоадер
 .loader {
@@ -30,5 +44,233 @@ body {
 
     &.show {
         display: flex;
+    }
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 30px 0;  
+    border-bottom: 1px solid #e5e5e5;
+
+    & a {
+        font-size: 14px;
+        color: #303030;
+        transition: .3s;
+
+        &:hover {
+            color: black;
+        }
+    }
+
+    &__inner {
+        display: flex;
+        align-items: center;
+    }
+
+    &__Logo {
+        margin-right: 40px;
+
+        & img {
+            max-width: 100%;
+            height: 40px;
+        }
+    }
+
+    &__menu li{
+        display: inline-block;
+        padding: 0 15px;
+    }
+
+    &__user {
+        &-login {
+            position: relative;
+            margin-right: 30px;
+            padding: 5px 0px 5px 25px;
+        
+            &:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: url(/images/icons/account.png) no-repeat;
+            }
+        }
+
+        &-basket {
+            position: relative;
+            padding: 5px 0px 5px 30px;
+        
+            &:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: url(/images/icons/bascet.png) no-repeat;
+            }
+        }
+    }
+}
+
+.breadcrumbs {
+    padding-top: 30px;
+
+    & a {
+        padding: 0 5px;
+        text-transform: uppercase;
+        color: #606060;
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    min-height: 280px;
+    padding: 100px 0;
+    color: #303030;
+
+    & a {
+        font-size: 12px;
+        color: #303030;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    & li {
+        line-height: 24px;
+    }
+
+    &__collection {
+        width: 30%;
+    }
+
+    &__shop,
+    &__social {
+        width: 40%;
+    }
+
+    &__title {
+        margin-bottom: 10px;
+        font-size: 14px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    &__shop {
+        display: flex;
+        justify-content: center;
+        border-left: 1px solid #e5e5e5;
+        border-right: 1px solid #e5e5e5;
+    }
+
+    &__social {
+        display: flex;
+        justify-content: center;
+
+        & li {
+            font-size: 12px;
+        }
+
+        & a {
+            width: 40px;
+            height: 40px;
+            margin: 20px 10px 0 0;
+            border: 1px solid #303030;
+        }
+
+        & span {
+            position: relative;
+            padding-right: 15px;
+
+            &:after {
+                content: "\f1f9";
+                position: absolute;
+                right: 0;
+                font-family: 'icomoon';
+            }
+        }
+    }
+
+    &__twitter {
+        position: relative;
+        transition: .4s;
+
+        &:before {
+            content: "\ea96";
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            font-size: 26px;
+            font-family: 'icomoon';
+            color: #606060;
+            transition: .4s;
+        }
+
+        &:hover {
+            background: #606060;
+        }
+
+        &:hover:before {
+            color: #fff;
+        }
+    }
+
+    &__facebook {
+        position: relative;
+        transition: .4s;
+
+        &:before {
+            content: "\ea90";
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            font-size: 26px;
+            font-family: 'icomoon';
+            color: #606060;
+            transition: .4s;
+        }
+
+        &:hover {
+            background: #606060;
+        }
+
+        &:hover:before {
+            color: #fff;
+        }
+    }
+
+    &__instagram {
+        position: relative;
+        transition: .4s;
+
+        &:before {
+            content: "\ea92";
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            font-size: 26px;
+            font-family: 'icomoon';
+            color: #606060;
+            transition: .4s;
+        }
+
+        &:hover {
+            background: #606060;
+        }
+
+        &:hover:before {
+            color: #fff;
+        }
     }
 }

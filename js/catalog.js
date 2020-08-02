@@ -9,13 +9,15 @@ class Catalog {  //создание классов в js
         this.$catalog = document.querySelector('.catalog');
         this.products = []; //this это класс Catalog
         this.$loader = this.$catalog.querySelector('.loader');
+        // this.$categoryId = this.$catalog.getAttribute('data-category-id'); //два варианта идентичны (получение атрибута)
+        this.categoryId = this.$catalog.dataset.categoryId;
     }
 
     load() { //будет загружать данные по ajax //после загрузки будет вызывать метод render()
         this.showLoader(); //loader-показ
         
         const xhr = new XMLHttpRequest();
-        xhr.open('GET', '/handlers/handler_catalog.php');
+        xhr.open('GET', `/handlers/handler_catalog.php?category_id=${this.categoryId}`);
         xhr.send();
 
         xhr.addEventListener('load', () => {
